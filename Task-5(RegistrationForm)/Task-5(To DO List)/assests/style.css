@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: 0;
+    outline: 0;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    gap: 1rem;
+  }
+  .heading {
+    width: 70%;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2px;
+    border: 15px solid #aa00d9;
+  }
+  .heading .logo {
+    width: 120px;
+    height: 120px;
+  }
+  .heading h1,
+  h3,
+  h4 {
+    text-align: center;
+  }
+  .heading h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .heading h3 {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  .heading h4 {
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .heading > a {
+    color: #222;
+    text-decoration: none;
+  }
+  
+  .container .title {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    margin-top: 5px;
+  }
+  .container .title::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  .box {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #aa00d9;
+    padding: 15px;
+    border-radius: 13px;
+  }
+  
+  .todo-app {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 11px;
+  }
+  .todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .todo-app h2 img {
+    width: 50px;
+    margin-left: 10px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #abe5fd;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: 15px;
+    background: transparent;
+  }
+  button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #aa00d9;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  ul li {
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 40px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    word-wrap: break-word;
+  }
+  ul li:hover {
+    background-color: #abe5fd;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+  ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+  }
+  ul li.checked::before {
+    background-image: url(images/checked.png);
+  }
+  ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  ul li span:hover {
+    background: #edeef0;
+  }
+  #invalid {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff5945;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    .heading {
+      width: 100%;
+      flex-direction: column;
+    }
+    .box {
+      width: 100%;
+    }
+    #list li {
+      flex-wrap: wrap !important;
+    }
+    .box{
+      padding:8px ;
+    }
+    .heading{
+      border: 8px solid #aa00d9;
+    }
+    .row {
+      flex-direction: column;
+      background: none;
+      gap: 0.5rem;
+    }
+    input {
+      width: 100%;
+      background: #abe5fd;
+      border-radius: 20px;
+      padding: 15px;
+    }
+    button {
+      padding: 10px 50px;
+      font-size: 16px;
+    }
+  }
