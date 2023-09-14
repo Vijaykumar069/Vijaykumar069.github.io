@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <section> <!-- firebase linking -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+     </section>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Login using Google, facebook, github, otp authentication using firebase
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>OTP Genetaror</h1>
+        <h3>Personal - Project </h3>
+        <h4>
+          Login using Google, facebook, github, otp authentication using
+          firebase <i class="fa-solid fa-fire"></i>
+          <br>Made By - <a href="https://adityasahu73.github.io/myportfolio/" target="_blank"> Vijaya Kumar </a><i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+        </h4>
+      </div>
+      <div class="sender" id="sender">
+      <input type="tel" id="number" placeholder="Enter your Phone Number"/>
+      <div id="recaptcha-container"></div>
+      <button class="fa-solid fa-phone" onclick="phoneAuth()">&nbsp &nbsp Get OTP</button>
+      </div>
+
+      <div id="verifier">
+      <input type="text" id="verification-code" placeholder="Enter OTP Code"/>
+      <button class="fa-solid fa-check-circle" onclick="verifyPhoneNumer()">&nbsp &nbsp Verify OTP</button>
+       </div>
+      <div id="p-conf">OTP authentication successsful</div>
+      <div id="n-conf">Enter Valid OTP</div>
+
+      <button id="googlebtn" class="fa-brands fa-google">
+        &nbsp &nbsp Login With Google
+      </button>
+      <div id="google-user"></div>
+      <button class="fa-brands fa-facebook" id="facebookbtn">
+        &nbsp &nbsp Login With Facebook
+      </button>
+      <div id="facebook-user"></div>
+      <button class="fa-brands fa-github" id="githubbtn">&nbsp &nbsp Login With Github</button>
+      <div id="github-user"></div>
+    </div>
+  </body>
+        <script src="firebase.js"></script>
+        <script src="script.js"></script>
+</html>
