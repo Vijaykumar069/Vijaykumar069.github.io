@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assests/style.css" />
+
+    <title>To Do List</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="heading">
+        <div class="left">
+        <a href="https://www.linkedin.com/company/letsgrowmore/">
+          <img src="assests/logo.jpeg" alt="logo" class="logo"
+        /></a>
+        </div>
+        <div class="right">
+        <h3>Web Development Internship</h3>
+        <h4>
+          Create a To Do List Web App.
+          <br />Made By -
+          <a href="https://adityasahu73.github.io/myportfolio/" target="_blank">
+            Vijaya Kumar </a
+          ><i class="fa-solid fa-heart" style="color: #ff0000"></i>
+        </h4>
+        </div>
+      </div>
+        <div class="box">
+          <div class="todo-app">
+            <h2>My To Do List <img src="assests/images/todo-list.png" alt=""></h2>
+            <div class="row">
+                <input type="text" id="inputbox" placeholder="Add Your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <span id="invalid"><img src="assests/images/arrow2.png" alt="">You Must Write Something!!</span>
+            <ul id="list">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 1</li>
+                <li>Task 1</li> -->
+            </ul>
+        </div>
+        </div>
+  </div>
+  </body>
+
+  <script src="assests/script.js"></script>
+</html>
