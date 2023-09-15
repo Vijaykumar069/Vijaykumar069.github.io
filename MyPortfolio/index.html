@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vijay - Portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <!-- Unicon -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+
+
+  <!-- 
+    - Typed Js
+   -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+  <!-- GSAP Link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+
+<body id="top" class="dark_theme">
+
+
+  <input type="radio" name="color" id="color-1" />
+  <input type="radio" name="color" id="color-2" />
+  <input type="radio" name="color" id="color-3" />
+  <input type="radio" name="color" id="color-4" />
+  <input type="radio" name="color" id="color-5" />
+  <input type="radio" name="color" id="color-6" />
+  <input type="radio" name="color" id="color-7" />
+  <input type="radio" name="color" id="color-8" />
+  <input type="radio" name="color" id="color-9" />
+  <input type="radio" name="color" id="color-10" />
+  <input type="checkbox" id="toggler-color">
+
+
+  <div class="style-switcher">
+    <h3 class="style-switcher-title">Theme Colors</h3>
+    <div class="style-switcher-colors">
+      <label for="color-1" class="color-1 color"></label>
+      <label for="color-2" class="color-2 color"></label>
+      <label for="color-3" class="color-3 color"></label>
+      <label for="color-4" class="color-4 color"></label>
+      <label for="color-5" class="color-5 color"></label>
+      <label for="color-6" class="color-6 color"></label>
+      <label for="color-7" class="color-7 color"></label>
+      <label for="color-8" class="color-8 color"></label>
+      <label for="color-9" class="color-9 color"></label>
+      <label for="color-10" class="color-10 color"></label>
+    </div>
+  </div>
+
+
+
+  <div id="loader">
+    <div id="wrapperload">
+      <div class="elem h1 logo">
+        <h3>Vijaya Kumar<span style="color: black;">.</span></h3>
+      </div>
+      <div class="elem">
+        <h3 style="color: black;">Frontend developer</h3>
+      </div>
+      <div class="elem">
+        <h3 style="color: black;">Web Developer</h3>
+      </div>
+      <div class="elem h1 logo">
+        <h3 class="wlcm">Welcome To My Portfolio</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo navitem">
+        <a href="#">Vijaya Kumar<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions navitem">
+
+        <!-- Style Switcher  -->
+
+        <label for="toggler-color" class="style-switcher-toggler">
+          <i class="fa-solid fa-gear fa-spin setting-icon"></i>
+        </label>
+
+
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link navitem">Home.</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link navitem">About.</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link navitem">Skills.</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link navitem">Portfolio.</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link navitem">Contact.</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero scroll-scale" id="home">
+
+        <figure class="hero-banner">
+          <picture>
+            <!-- <source srcset="./assets/images/mine-banner.png" media="(min-width: 768px)"> -->
+            <!-- <source srcset="./assets/images/mine-banner-md.png" media="(min-width: 500px)"> -->
+          </picture>
+        </figure>
+        <img src="./assets/images/Vijay.jpeg.jpg" alt="" class="graph" id="right">
+
+        <div class="hero-content leftitem">
+          <h3 class="h4 leftitem">Hello It's Me</h3>
+          <h3 class="h2 hero-title leftitem">Vijaya Kumar</h3>
+          <h3 class="h4 leftitem">And I'm a <span id="element"></span></h3>
+          <a href="#contact" class="btn btn-primary leftitem">Contact Me</a>
+        </div>
+
+        </div>
+
+        <ul class="hero-social-list leftitem">
+
+          <li>
+            <a href="https://github.com/Vijaykumar069?tab=repositories" class="hero-social-link">
+              <ion-icon name="logo-github"></ion-icon>
+
+              <div class="tooltip">Github</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://instagram.com/stupid_bouy069?igshid=MzNlNGNkZWQ4Mg==" class="hero-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+
+              <div class="tooltip">Instagram</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/vijaya-kumar-annam-267237261" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#about" class="scroll-down navitem">Scroll &nbsp;<i class="fas fa-arrow-circle-right fa-beat"></i></a>
+
+      </section>
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <!-- <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                12+ <strong>Years of Experience</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                230+ <strong>Completed Projects</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                95+ <strong>Happy Clients</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section> -->
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <!-- Qualification -->
+
+        <div class="qual about-left scroll-left">
+          <h1 class="qual-section-title">Qualification</h1>
+          <span class="qual-section-subtitle">My Personal Journey</span>
+
+
+          <div class="qual-container container">
+            <div class="qual-tabs">
+              <div class="qual-button qual-active" data-target="#education">
+                <i class="uil uil-graduation-cap qual-icon"></i>
+                Education
+              </div>
+
+              <div class="qual-button qual-active work" data-target="#work">
+                <i class="uil uil-briefcase-alt qual-icon"></i>
+                Work
+              </div>
+
+
+              <div class="qual-sections">
+                <!-- Qualification Content 1 -->
+
+                <div class="qual-content qual-active" data-content id="education">
+
+                  <!-- Qualification 1 -->
+                  <div class="qual-data">
+                    <div>
+                      <h3 class="qual-title" style="font-size: 1.1rem;">Btech Computer Science Student</h3>
+                      <span class="qual-subtitle">Bharath University, Chennai</span>
+                      <div class="qual-calender">
+                        <i class="uil uil-calendar-alt qual-icon"></i>
+                        2021-2025
+                      </div>
+                    </div>
+
+                    <div>
+                      <span class="qual-rounder"></span>
+                      <span class="qual-line"></span>
+                    </div>
+                  </div>
+
+                  <!-- Qualification 2 -->
+                  <div class="qual-data">
+                    <div></div>
+                    <div>
+                      <span class="qual-rounder"></span>
+                      <span class="qual-line"></span>
+                    </div>
+
+                    <div>
+                      <h3 class="qual-title">12th</h3>
+                      <span class="qual-subtitle">Kamala Junior College, Markapur</span>
+                      <div class="qual-calender">
+                        <i class="uil uil-calendar-alt"></i>
+                        2021
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Qualification 3 -->
+                  <div class="qual-data">
+                    <div>
+                      <h3 class="qual-title">10th</h3>
+                      <span class="qual-subtitle">Kamala Concept School, Markapur</span>
+                      <div class="qual-calender">
+                        <i class="uil uil-calendar-alt qual-icon"></i>
+                        2019
+                      </div>
+                    </div>
+                    <div>
+                      <span class="qual-rounder"></span>
+                      <!-- <span class="qual-line"></span> -->
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Work Content 2 -->
+
+                <div class="qual-content" data-content id="work">
+
+                  <!-- Work 1 -->
+                  <div class="qual-data">
+                    <div>
+                      <h3 class="qual-title">Code Clause</h3>
+                      <a href="https://codeclause.com/"><span class="qual-subtitle">Web development - Internship</span></a>
+                      <div class="qual-calender">
+                        <i class="uil uil-calendar-alt"></i>
+                        01 August - 01 September
+                      </div>
+                    </div>
+
+                    <div>
+                      <span class="qual-rounder"></span>
+                      <span class="qual-line"></span>
+                    </div>
+                  </div>
+
+                  <!-- Work 2 -->
+
+                  <div class="qual-data">
+                    <div></div>
+                    <div>
+                      <span class="qual-rounder"></span>
+                      <span class="qual-line"></span>
+                    </div>
+
+                    <div>
+                      <h3 class="qual-title">Lets Grow More</h3>
+                      <a href="https://www.linkedin.com/company/letsgrowmore/"><span class="qual-subtitle">Web development - Internship</span></a>
+                      <div class="qual-calender">
+                        <i class="uil uil-calendar-alt"></i>
+                        Present
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="qual-data">
+                    <div>
+                      <h3 class="qual-title"></h3>
+                      <span class="qual-subtitle"></span>
+                    </div>
+
+                    <div>
+                      <span class="qual-rounder"></span>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content section-content about-right scroll-scale">
+
+          <p class="section-subtitle">About me</p>
+
+          <h2 class="h3 section-title">About me !!</h2>
+
+          <p class=" section-text">
+            I am a web developer with a strong passion for creating functional and user-friendly websites and
+            applications.
+            I have working experience with HTML, CSS, and JavaScript and am currently learning more advanced languages
+            such as React and Node.
+            I am highly motivated to expand my skill set and continuously improve as a web developer
+            I am excited to bring my skills and passion for web development to a dynamic team and contribute to the
+            creation of innovative and impactful websites and applications
+            </p>
+
+            <div class="btn-group">
+              <!-- <a href="#contact"><button class="btn btn-secondary">Hire me</button></a> -->
+
+              <a href="./assets/VijayakumarResume.pdf" target="_blank"><button class="btn btn-primary">Download cv</button></a>
+            </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content scroll-scale">
+
+          <p class="section-subtitle">My skills</p>
+
+          <h2 class="h3 section-title">What My Programming Skills Included?</h2>
+
+          <p class="section-text">
+            I develop simple, intuitive and responsive user interface that helps users get things done with less effort
+            and time
+            with those technologies.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box scroll-right" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Bootstrap</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Firebase</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/firebase.png" alt="Firebase logo">
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Python</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/python.png" alt="Python logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">C Programming</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/c.png" alt="SASS logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">SQL</div>
+
+                <div class="card-icon">
+                  <!-- <img src="./assets/SQL1.png" alt="SQL logo"> -->
+                  <i class="fa fa-database" style="font-size:40px;color:red"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Java</div>
+
+                <div class="card-icon">
+                  <!-- <img src="./assets/SQL1.png" alt="SQL logo"> -->
+                  <i class="fab fa-java" style="font-size:40px;color:greenyellow"></i>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <ul class="tools-list">
+
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Github</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/github.png" alt="Npm logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Netlify</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/netlify.png" alt="Trello logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Figma</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/figma.png" alt="ClickUp logo">
+                </div>
+              </div>
+            </li>
+    
+
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="project" id="portfolio">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content scroll-left">
+
+              <p class="section-subtitle">My Works</p>
+
+              <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+
+              <p class="section-text">
+                We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
+                elegant interface
+                helps any non-technical clients.
+              </p>
+
+            </div>
+          </li>
+
+          <li class="scroll-left">
+            <a href="https://vijaykumar069.github.io/Task-5(OTP%20Generator)/" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/project-images/Output.png" class="w-100" alt="login page">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Login using Google, facebook, github, otp authentication using firebase</h3>
+
+                <time class="publish-date" datetime="2023-08">August 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+         <li class="scroll-right">
+            <a href="https://vijaykumar069.github.io/Task-5(WeatherforcastApp)/" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/weather.png.png" class="w-100" alt="Weather App">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">weather Forecast App Using Api</h3>
+
+                <time class="publish-date" datetime="2023-08">August 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+         <li class="scroll-right">
+            <a href="https://vijaykumar069.github.io/Task-5(To%20DO%20List)/" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/ToDoList.png" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">To-Do List</h3>
+
+                <time class="publish-date" datetime="2023-07">July 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+         <li class="scroll-right">
+            <a href="https://vijaykumar069.github.io/Task-5(BasicChatApplication)/" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/ChatApplication.png" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Chat Application</h3>
+
+                <time class="publish-date" datetime="2023-09">September 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li class="scroll-right">
+            <a href="https://vijaykumar069.github.io/Task-5(RegistrationForm)/" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/project-images/RegistrationForm.png" class="w-100"
+                  alt="Registrartion Form (Display data on same page)">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Registrartion Form </h3>
+
+                <time class="publish-date" datetime="2023-09">September 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li class="scroll-right">
+            <a href="https://vijaykumar069.github.io/Task-5(CountDownTimer)/" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/project-images/CountDownTimer.png" class="w-100"
+                  alt="countdown.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Countdown Timer</h3>
+
+                <time class="publish-date" datetime="2022-08">August 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li class="scroll-right">
+            <a href="https://vijaykumar069.github.io/Task-5(Calculator)/" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/project-images/calculator.png" class="w-100" alt="A macintosh on a yellow background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Calculator</h3>
+
+                <time class="publish-date" datetime="2023-09">September 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-5.png" class="w-100"
+                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-6.png" class="w-100"
+                  alt="On a yellow background, a digital watch and a glass.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-7.png" class="w-100"
+                  alt="A fujifilm instant camera on a dark electric blue background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <button class="load-more">Load more work</button>
+          </li> -->
+
+        </ul>
+
+      </section>
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content scroll-left">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">Please Drop a Message</h2>
+
+          <p class="section-text">
+            Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                  Markapur, Prakasam Dist, Andhra Pradesh
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:+9603045282" class="contact-info">+91 9701723572</a>
+
+                <!-- <a href="tel:09765432200" class="contact-info">(09) 765 432 200</a> -->
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:vijaykumarannam069@gmail.com" class="contact-info">vijaykumarannam069@gmail.com</a>
+
+                <!-- <a href="mailto:support@jack.com" class="contact-info">support@.com</a> -->
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="https://github.com/Vijaykumar069"
+                    class="contact-social-link">
+                    <div class="tooltip">Github</div>
+
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://instagram.com/stupid_bouy069?igshid=MzNlNGNkZWQ4Mg==" class="contact-social-link">
+                    <div class="tooltip">Instagram</div>
+
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.linkedin.com/in/vijaya-kumar-annam-267237261" class="contact-social-link">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="" class="contact-form scroll-right" method="post" name="google-sheet">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="Your name" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g example@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+          <div class="buttons">
+            <button type="submit" class="btn btn-primary" id="send" name="submit">Send</button><br>
+          </div>
+          <span id="completed"></span>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Vijaya <span>Kumar...</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2023 <a href="#">Vijaya Kumar</a> - All rights reserved
+      </p>
+
+      
+      
+    </div>
+  </footer>
+  
+  <div class="star-box">
+    <div class="container-star">
+      <div class="post">
+        <div class="text">Thanks for rating me!</div>
+      </div>
+      <div class="star-widget">
+        <form action="" method="post" id="star-form">
+        <input type="radio" name="rate" value="star-5" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" value="star-4" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" value="star-3" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" value="star-2" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" value="star-1" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+          <header class="star-header"></header>
+          <div class="btn-star btn">
+            <button type="submit" name="submit">Send<i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+          <span id="sucessfully"></span>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+    - #GO TO TOP
+  -->
+  
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+  
+  <button id="star">
+    <i class="fa-solid fa-star fa-shake star-icon"></i>
+  </label>
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
