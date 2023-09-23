@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=REM:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins&family=REM:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins' sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#user{
+    display: block;
+    color: #ebe1e1;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #292929;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* overflow: hidden; */
+
+}
+.form-control{
+    font-weight: 500;
+    color: rgb(26, 25, 25);
+}
+.form-control::placeholder {
+    font-weight: 500;
+    color: rgb(87, 87, 87);
+}
+.btn-dark{
+    cursor: not-allowed;
+}
+.resume .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contactBox,.linkBox{
+    display: flex;
+    justify-content: center;
+}
+.resume{
+    display: block;
+    background-color:#FDCEDF;
+    color: #202020;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'REM', sans-serif;
+}
+.para{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'REM', sans-serif;
+}
+.btn-sm{
+    display: none;
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Resume Builder</title>
+  </head>
+  <body>
+
+    <div class="container text-capitalize mt-3 pb-3 p-5 mb-3" id="user">
+
+        <!-- Heading  -->
+
+        <div class="heading text-center">
+            <h1>Create Your Resume</h1>
+            <h3>In Short Time <a href="https://instagram.com/stupid_bouy069?igshid=MzRlODBiNWFlZA==" class="text-decoration-none" target="_blank" ><i class="fa fa-instagram" style="font-size:20px;color:rgb(255, 255, 0)"></i></a></h3>
+            <h4>Resume Builder <i class="fa-solid fa-file-pdf"></i>
+            <br>Made By - <a href="https://Vijaykumar069.github.io/MyPortfolio/" class="text-decoration-none" target="_blank"> Vijaya Kumar </a><i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+            </h4>
+          </div>
+
+          <hr>
+
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Personal Information  -->
+                <h3> <i class="fa-solid fa-user"></i> Personal Information</h3>
+
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                      <label for="firstname" class="form-label">First Name</label>
+                      <input type="email" class="form-control" id="firstname" placeholder="Vijaya Kumar" required>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="lastname" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" placeholder="Annam" id="lastname" required>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <label for="contact" class="form-label">Contact No.</label>
+                        <input type="email" class="form-control" placeholder="+91 9701723572" id="contact"required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="vijaykumarannam069@mail.com" id="email" required>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" placeholder="Markapur, Andhra Pradesh" id="address" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" placeholder="Web developer" id="title">
+                    </div>
+   
+                </div>
+
+                <hr class="mt-3">
+                <!-- Importanat Links  -->
+                <div class="form-group mt-2">
+                    <h4> <i class="fa-solid fa-link"></i> Important Links</h4>
+
+                    <div class="col">
+                        <label for="linkedin" class="form-label"><i class="fa-brands fa-linkedin"></i> Linkedin</label>
+                        <input type="text" class="form-control" placeholder="Paste Your Link here --> Linked In" id="linkedin">
+                    </div>
+
+                    <div class="col">
+                        <label for="github" class="form-label"><i class="fa-brands fa-github"></i> Github</label>
+                        <input type="email" class="form-control" placeholder="Paste Your Link here --> GitHub Profile" id="github">
+                    </div>
+    
+                    <div class="col">
+                        <label for="portfolio" class="form-label"><i class="fa-solid fa-user-pen"></i> Portfolio</label>
+                        <input type="text" class="form-control" placeholder="Paste Your Link here --> Your Portfolio" id="portfolio">
+                    </div>
+
+                </div>
+
+                <hr class="mt-3">
+
+                <!-- Skillsets  -->
+                <div class="form-group mt-2">
+                    <h4><i class="fa-solid fa-pen"></i> Skillsets</h4>
+
+                    <div class="col mt-3">
+                        <h6> PROGRAMMING LANGUAGES</h6>
+                        <label for="languages" class="form-label" disabled>Add languages</label>
+                        <input type="text" class="form-control" placeholder="Python , Java" id="languages">
+                    </div>
+
+                    <div class="col mt-3">
+                        <h6>LIBRARIES / FRAMEWORKS</h6>
+                        <label for="libraries" class="form-label">Add libraries / frameworks</label>
+                        <input type="text" class="form-control" placeholder="Javascript , ReactJs, Django" id="libraries">
+                    </div>
+
+                    <div class="col mt-3">
+                        <h6>TOOLS / PLATFORMS</h6>
+                        <label for="tools" class="form-label">Add tools / platforms</label>
+                        <input type="text" class="form-control" placeholder="VsCode , Github , Git" id="tools">
+                    </div>
+                    <div class="col mt-3">
+                        <h6>DATABASES</h6>
+                        <label for="databases" class="form-label">Add databases</label>
+                        <input type="text" class="form-control" placeholder="Dbms , Oracle , MySQL" id="databases">
+                    </div>
+
+                </div>
+
+                <hr class="mt-3">
+
+                <!-- CERTIFICATIONS Box -->
+
+                <div class="row g-3 mt-2" id="certificateBox">
+                    <h4> <i class="fa-solid fa-star"></i> Certifications
+                    <button class="btn btn-dark btn-sm ms-2" onclick="addCertificates()" disabled><i class="fa-solid fa-plus"></i> Add</button></h4>
+
+                    <div id="certificate" class="certificate row">
+                        <h5> Certificates </h5>
+                        <div class="col-md-6">
+                        <label for="project-title" class="form-label">Certificate Title</label>
+                        <input type="text" class="form-control" placeholder="Web developer" id="certificateTitle">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="project-link" class="form-label">Issued by</label>
+                            <input type="text" class="form-control" placeholder="Internshala, Udemy..." id="certificateIssued">
+                        </div>
+
+                        <div class="col-md-12">
+                        <label for="technologies-used" class="form-label mt-1">Certificate Link</label>
+                        <input type="text" class="form-control" placeholder="Enter Your Link here.." id="certificateLink">
+                        </div>
+                    </div>
+
+                    <!-- add certificate -->
+
+                </div>
+
+            </div>
+
+            <!-- Second col  -->
+            <div class="col-md-6 " id="jobBox">
+
+                <h3> <i class="fa-solid fa-briefcase"></i> Experience <button class="btn btn-dark btn-sm"  onclick="addjob()" disabled><i class="fa-solid fa-plus"></i> Add</button></h3>
+
+                <!-- Job Box  -->
+                
+                <div class="row g-3" id="job">
+                    <h4> Jobs / Internships </h4>
+
+                    <div class="col-md-6">
+                      <label for="employer" class="form-label">Employer</label>
+                      <input type="text" class="form-control" placeholder="MicroSoft" id="employer">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="jobtitle" class="form-label">Job Title</label>
+                      <input type="text" class="form-control" placeholder="Web developer" id="jobtitle">
+                    </div>
+    
+                    <div class="col-md-6">
+                        <label for="startdate" class="form-label">Start Date</label>
+                        <input type="text" class="form-control" placeholder="Sep 2023" id="startdate">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="enddate" class="form-label">End Date</label>
+                        <input type="text" class="form-control" placeholder="Dec 2023" id="enddate">
+                    </div>
+    
+                    <div class="col-md-12">
+                        <label for="joblocation" class="form-label">Location</label>
+                        <input type="text" class="form-control" placeholder="Markapur, The City of Density" id="joblocation">
+                    </h4>
+                    </div>
+
+                    <div class="col">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea name="description" id="description" placeholder="This is the description of the things I did while I was working here.." cols="30" rows="3" class="form-control" id="description"></textarea>
+                    </div>
+   
+                </div>
+
+                <hr class="mt-3" id="degreeBox">
+
+                <!-- Education Box  -->
+                
+                <div class="row g-3 mt-2" id="educationBox">
+                    <h4> <i class="fa-solid fa-graduation-cap"></i> Education
+                    <button class="btn btn-dark btn-sm ms-2" onclick="addeducation()" disabled><i class="fa-solid fa-plus"></i> Add</button></h4>
+
+                    <div class="row" id="education">
+                        <h5> College / Academic Degree</h5>
+
+                        <div class="col-md-6">
+                        <label for="institute" class="form-label">Institute Name</label>
+                        <input type="text" class="form-control" placeholder="Bharath University" id="institute" required>
+                        </div>
+
+                        <div class="col-md-6">
+                        <label for="collegelocation" class="form-label">Location</label>
+                        <input type="text" class="form-control" placeholder="Selaiyur, Chennai" id="collegelocation" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="degree" class="form-label">Degree Type</label>
+                            <input type="text" class="form-control" placeholder="Bachelor's / Masters" id="degree" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="fieldofstudy" class="form-label">Field of Study</label>
+                            <input type="text" class="form-control" placeholder="Computer Science & Engineering" id="fieldofstudy" required>
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label for="startyear" class="form-label">Start Year</label>
+                            <input type="text" class="form-control" placeholder="2021" id="startyear" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="endyear" class="form-label">End Year</label>
+                            <input type="text" class="form-control" placeholder="2025" id="endyear">
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label for="scores" class="form-label">Scores</label>
+                            <select class="form-select col-md-6" aria-label="Small select example" id="educationScores">
+                            <option value="CGPA" selected>CGPA</option>
+                            <option value="GPA">GPA</option>
+                            <option value="PERCENTAGE">PERCENTAGE</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="jobtitle" class="form-label">Enter Here</label>
+                            <input type="text" class="form-control" placeholder="10" id="educationHere" required>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <hr class="mt-3" id="projectBox">
+
+                <!-- Project Box  -->
+
+                <div class="row g-3 mt-2">
+                    <h4> <i class="fa-solid fa-desktop"></i> Projects
+                    <button class="btn btn-dark btn-sm ms-2" onclick="addproject()" disabled><i class="fa-solid fa-plus"></i> Add</button></h4>
+
+                    <div id="project">
+                        <h5> Open Scores / Personal Projects </h5>
+                        <div class="col-md-6">
+                        <label for="project-title" class="form-label">Project Title</label>
+                        <input type="text" class="form-control" placeholder="Weather App" id="project-title">
+                        </div>
+
+                        <div class="col-md-12">
+                        <label for="technologies-used" class="form-label mt-1">Technologies Used</label>
+                        <input type="text" class="form-control" placeholder="Html ,Css ,JS" id="technologies-used">
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="project-link" class="form-label mt-1">Project Link / GitHub Repository</label>
+                            <input type="text" class="form-control" placeholder="Github Link" id="project-link">
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="description" class="form-label mt-1">Description</label>
+                            <textarea name="description" id="project-description" cols="30" rows="3" class="form-control" id="description" placeholder="With this project I was aiming to solve this problem statement and impacted X users with the final release/launch."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="mt-1 mb-0">Disclaimer * :- Download Button -> More setting -> Scale -> Default -> Customised -> 70 ->CopyRight &copy 2023 Vijaya Kumar <i class="fa-solid fa-heart" style="color: #ff0000;"></i> </p>
+
+            </div>
+
+            <!-- <button class="btn btn-secondary btn-lg m-auto mt-3 w-auto" onclick="generateResume()"> <i class="fa-solid fa-file"></i> Preview 
+            </button>
+
+            <button class="btn btn-primary btn-lg mt-3 mb-1  m-auto mt-3 w-auto" onclick="printCv()"
+            data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="More setting -> Scale -> Customised -> 70"><i class="fa-solid fa-download"></i> Download </button> -->
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                <button class="btn btn-primary me-md-2" type="button" onclick="generateResume()">
+                    <i class="fa-solid fa-arrow-down"></i> Preview
+                </button>
+                <button class="btn btn-primary" type="button" onclick="printCv()">
+                    <i class="fa-solid fa-download"></i> Download
+                </button>
+              </div>
+
+            
+
+
+        </div>
+    </div>
+
+    <!-- Resume Template -->
+
+    <div class="resume container" id="resume">
+        <div class="heading">
+            <div class="row">
+                <div class="col-6"><h1 id="ResumeFirstName">Vijaya Kumar</h1></div>
+                <div class="col-6"><h1 id="ResumeLastName">Annam</h1></div>
+            </div>
+        <h5 id="ResumeTitle">Web Developer</h5>
+        </div>
+
+        <div class="contactBox fw-">
+            <p class="me-1" id="ResumeEmail">Email</p>|
+            <p class="ms-1 me-1" id="ResumeContact">+91 9701723572</p>|
+            <p class="ms-1" id="ResumeAddress">Address</p>
+        </div>
+
+        <div class="linkBox fw-semibold">
+            <a href="" class="me-1 text-decoration-none" id="resumeLink1">Linkedin</a>|
+            <a href="" class="ms-1 text-decoration-none me-1" id="resumeLink2">Github</a>|
+            <a href="" class="ms-1 text-decoration-none" id="resumeLink3">Portfolio</a>
+        </div>
+
+        <hr>
+
+        <div class="educationResume">
+            <h4 class="fw-bolder">Education</h4>
+            <div class="row">
+                <div class="col-md-10 college fw-semibold" id="educationInstitute">Bharath University</div>
+                <div class="col-md-1 college-year w-auto ms-auto fw-semibold"  id="educationStartyear">2021</div>-
+                <div class="col-md-1 college-endyear w-auto fw-semibold"  id="educationEndyear">present</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 college-degree w-auto pe-0 fw-medium" id="educationDegree">Bachelor's</div>
+                <div class="col-md-6 college-field w-auto fw-medium" id="educationField">Of Computer Science & Engineering</div>
+                <div class="col-md-2 college-location text-md-end w-auto ms-auto fw-semibold"  id="educationLocation">Tambaram, Chennai</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1 college-scores w-auto pe-0" id="educationScore">CGPA</div>
+                <div class="col-md-11 college-here" id="educationScoreHere">9.7</div>
+            </div>
+        </div>
+
+        <div class="experienceResume">
+            <h4 class="mt-2 fw-bolder">Experience</h4>
+            <div class="row experience-row">
+                    <p class="col-md-3 w-auto fw-semibold" id="resumeEmployer">codeclause</p>|
+                    <p class="col-md-3 fw-semibold" id="resumeJobtitle">Web developer</p>
+                    <p class="col-md-2 text-md-end w-auto ms-auto fw-semibold" id="resumeJoblocation">work from home</p>|
+                    <p class="col-md-2 text-md-end w-auto fw-semibold" id="resumeStartdate">September 2023</p>-
+                    <p class="col-md-2 text-md-end w-auto fw-semibold" id="resumeEnddate">December 2023</p>
+            </div>
+            <div class="row">
+                <div class="col w-auto">
+                    <p class="text-break w-75 para" id="resumeExDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque error ipsa, fugit architecto cupiditate obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo porro perspiciatis, totam optio numquam ut id corporis reprehenderit architecto laboriosam?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slillsets-Resume">
+            <h4 class="fw-bold">Skills</h4>
+
+            <div class="row experience-row">
+                <p class="col-md-6 w-25 fw-bolder" >PROGRAMMING LANGUAGES</p>
+                <p class="col-md-6 m-auto fw-semibold" id="resumeSkill1"> Python , Java</p>
+            </div>
+
+            <div class="row experience-row">
+                <p class="col-md-6 w-25 fw-bolder">LIBRARIES / FRAMEWORKS</p>
+                <p class="col-md-6 m-auto fw-semibold"  id="resumeSkill2">Javascript , Django</p>
+            </div>
+
+            <div class="row experience-row ">
+            <p class="col-md-6 w-25 fw-bolder">TOOLS / PLATFORMS</p>
+            <p class="col-md-6 m-auto fw-semibold"  id="resumeSkill3"> Git,Github,Vs code</p>
+            </div>
+
+            <div class="row experience-row">
+                <p class="col-md-6 w-25 fw-bolder" >DATABASES</p>
+                <p class="col-md-6 m-auto fw-semibold" id="resumeSkill4">MySQL, Dbms, Oracle</p>
+            </div>
+
+        </div>
+
+        <div class="project-resume mt-2">
+            <h4 class="fw-bold">OPEN SOURCE / PERSONAL PROJECTS</h4>
+
+            <div class="row">
+                <p class="col-md-4 w-auto fw-bolder" id="resumeProjectTitle">Login Page</p>
+                <a class="col-md-6 fw-semibold text-decoration-none text-dark" href="" id="resumeProjectlink">Link</a>
+                <p class="col-md-2 text-md-end w-auto ms-auto fw-semibold" id="resumeprojectTech">Html,css,js,Python</p>
+            </div>
+            <div class="row">
+                <p class="text-break w-75 para" id="resumeProjectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque error ipsa, fugit architecto cupiditate obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo porro perspiciatis, totam optio numquam ut id corporis reprehenderit architecto laboriosam?</p>
+            </div>
+        </div>
+
+        <div class="certificates-resume">
+            <h4 class="fw-bold">CERTIFICATIONS & AWARDS</h4>
+
+            <div class="row">
+                <p class="col-md-4 w-auto fw-bolder" id="resumeCertificatetitle"></p>
+                <p class="col-md-4 w-auto fw-bolder" id="resumeCertificateIssued"></p>
+                <a class="col-md-4 w-auto fw-semibold text-decoration-none text-dark" id="resumeCertificateLink">Link</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</html>
