@@ -143,20 +143,20 @@ starform.addEventListener('submit', (e) => {
     })
 })
 
-form.addEventListener('submit', (e) => {
-  e.target.submit.innerHTML="sending....";
-  e.preventDefault();
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response =>{
-      e.target.submit.innerHTML="send";
-      completed.innerHTML="Thank you for Contacting Us!!"
+// form.addEventListener('submit', (e) => {
+//   e.target.submit.innerHTML="sending....";
+//   e.preventDefault();
+//   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+//     .then(response =>{
+//       e.target.submit.innerHTML="send";
+//       completed.innerHTML="Thank you for Contacting Us!!"
 
-      setTimeout(function(){
-        completed.innerHTML=""
-        },5000)
-        form.reset();
-    })
-})
+//       setTimeout(function(){
+//         completed.innerHTML=""
+//         },5000)
+//         form.reset();
+//     })
+// })
 
 
 
