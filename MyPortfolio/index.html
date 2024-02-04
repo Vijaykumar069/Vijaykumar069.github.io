@@ -964,9 +964,9 @@
 
         </div>
 
-        <form action="https://getform.io/f/37d4ca87-2be5-49a6-9f76-66b70cb1b66f" class="contact-form scroll-right" method="post" name="google-sheet">
-<!--         <form action="https://getform.io/f/37d4ca87-2be5-49a6-9f76-66b70cb1b66f" method="POST" enctype="multipart/form-data"> -->
-<!--           <input type="hidden" name="_gotcha" style="display:none !important"> -->
+<!--         <form action="https://getform.io/f/37d4ca87-2be5-49a6-9f76-66b70cb1b66f" class="contact-form scroll-right" method="post" name="google-sheet">
+        <form action="https://getform.io/f/37d4ca87-2be5-49a6-9f76-66b70cb1b66f" method="POST" enctype="multipart/form-data"> 
+          <input type="hidden" name="_gotcha" style="display:none !important"> 
 
           <div class="form-wrapper">
 
@@ -1033,7 +1033,45 @@
           <span id="completed"></span>
 
         </form>
-
+ -->
+          <form action="https://getform.io/f/37d4ca87-2be5-49a6-9f76-66b70cb1b66f" class="contact-form scroll-right" method="post" name="google-sheet">
+          <div class="form-wrapper">
+            <label for="name" class="form-label">Name</label>
+            <div class="input-wrapper">
+              <input type="text" name="name" id="name" required placeholder="Your name" class="input-field">
+              <ion-icon name="person-circle"></ion-icon>
+            </div>
+          </div>
+        
+          <div class="form-wrapper">
+            <label for="email" class="form-label">Email</label>
+            <div class="input-wrapper">
+              <input type="email" name="email" id="email" required placeholder="e.g example@mail.com" class="input-field">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+          </div>
+        
+          <div class="form-wrapper">
+            <label for="phone" class="form-label">Phone</label>
+            <div class="input-wrapper">
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+              <ion-icon name="call"></ion-icon>
+            </div>
+          </div>
+        
+          <div class="form-wrapper">
+            <label for="message" class="form-label">Message</label>
+            <div class="input-wrapper">
+              <textarea name="message" id="message" required placeholder="Write message..." class="input-field"></textarea>
+              <ion-icon name="chatbubbles"></ion-icon>
+            </div>
+          </div>
+        
+          <div class="buttons">
+            <button type="submit" class="btn btn-primary" id="send" name="submit">Send</button><br>
+          </div>
+          <span id="completed"></span>
+        </form>
       </section>
 
     </article>
